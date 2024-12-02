@@ -49,4 +49,4 @@ def monthly_challenge(request,month):
         response_data=f"<h1>{challenge_text}</h1>"
         return HttpResponse(response_data)
     except:
-        return HttpResponseNotFound("<h1>Month not supported</h1>")
+        return HttpResponseNotFound("<h1>Month is not supported</h1>")
